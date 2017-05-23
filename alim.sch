@@ -1,0 +1,534 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:alim_robot
+LIBS:alim-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +BATT #PWR01
+U 1 1 59131F01
+P 1150 800
+F 0 "#PWR01" H 1150 650 50  0001 C CNN
+F 1 "+BATT" H 1150 940 50  0000 C CNN
+F 2 "" H 1150 800 50  0001 C CNN
+F 3 "" H 1150 800 50  0001 C CNN
+	1    1150 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEN50 CC1
+U 1 1 59172E64
+P 3000 1300
+F 0 "CC1" H 3000 850 60  0000 C CNN
+F 1 "TEN50" H 3000 1750 60  0000 C CNN
+F 2 "alim_robot:Traco_TEN50_Molex" H 3100 1800 60  0001 C CNN
+F 3 "" H 3100 1800 60  0001 C CNN
+	1    3000 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEN50 CC2
+U 1 1 59172EC3
+P 3000 2650
+F 0 "CC2" H 3000 2200 60  0000 C CNN
+F 1 "TEN50" H 3000 3100 60  0000 C CNN
+F 2 "alim_robot:Traco_TEN50_Molex" H 3100 3150 60  0001 C CNN
+F 3 "" H 3100 3150 60  0001 C CNN
+	1    3000 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fuse F1
+U 1 1 59172FB6
+P 1450 1100
+F 0 "F1" V 1530 1100 50  0000 C CNN
+F 1 "10A" V 1375 1100 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_open_Schurter_0031_8201" V 1380 1100 50  0001 C CNN
+F 3 "" H 1450 1100 50  0001 C CNN
+	1    1450 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Fuse F2
+U 1 1 59173035
+P 1450 2450
+F 0 "F2" V 1530 2450 50  0000 C CNN
+F 1 "10A" V 1375 2450 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_open_Schurter_0031_8201" V 1380 2450 50  0001 C CNN
+F 3 "" H 1450 2450 50  0001 C CNN
+	1    1450 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 591730EA
+P 1750 2950
+F 0 "#PWR02" H 1750 2700 50  0001 C CNN
+F 1 "GND" H 1750 2800 50  0000 C CNN
+F 2 "" H 1750 2950 50  0001 C CNN
+F 3 "" H 1750 2950 50  0001 C CNN
+	1    1750 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 J1
+U 1 1 59173679
+P 1200 3050
+F 0 "J1" H 1200 3200 50  0000 C CNN
+F 1 "BATT" V 1300 3050 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 1200 3050 50  0001 C CNN
+F 3 "" H 1200 3050 50  0001 C CNN
+	1    1200 3050
+	0    -1   1    0   
+$EndComp
+$Comp
+L OKX-T/10-D12 U2
+U 1 1 59175B23
+P 5300 4600
+F 0 "U2" H 5950 4850 60  0000 C CNN
+F 1 "OKX-T/10-D12" H 4900 4850 60  0000 C CNN
+F 2 "alim_robot:Murata_OKX-T10-D12N-C" H 5150 4600 60  0001 C CNN
+F 3 "" H 5150 4600 60  0001 C CNN
+	1    5300 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L OKX-T/10-D12 U1
+U 1 1 59177088
+P 2900 4600
+F 0 "U1" H 3550 4850 60  0000 C CNN
+F 1 "OKX-T/10-D12" H 2500 4850 60  0000 C CNN
+F 2 "alim_robot:Murata_OKX-T10-D12N-C" H 2750 4600 60  0001 C CNN
+F 3 "" H 2750 4600 60  0001 C CNN
+	1    2900 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 591774A2
+P 2900 5400
+F 0 "#PWR03" H 2900 5150 50  0001 C CNN
+F 1 "GND" H 2900 5250 50  0000 C CNN
+F 2 "" H 2900 5400 50  0001 C CNN
+F 3 "" H 2900 5400 50  0001 C CNN
+	1    2900 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 591774CC
+P 5300 5400
+F 0 "#PWR04" H 5300 5150 50  0001 C CNN
+F 1 "GND" H 5300 5250 50  0000 C CNN
+F 2 "" H 5300 5400 50  0001 C CNN
+F 3 "" H 5300 5400 50  0001 C CNN
+	1    5300 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 591795B6
+P 3250 5200
+F 0 "R1" V 3330 5200 50  0000 C CNN
+F 1 "1.472k" V 3250 5200 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 3180 5200 50  0001 C CNN
+F 3 "" H 3250 5200 50  0001 C CNN
+	1    3250 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5917BEF6
+P 5650 5200
+F 0 "R2" V 5730 5200 50  0000 C CNN
+F 1 "1.472k" V 5650 5200 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 5580 5200 50  0001 C CNN
+F 3 "" H 5650 5200 50  0001 C CNN
+	1    5650 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L D D2
+U 1 1 5917D817
+P 3350 3550
+F 0 "D2" H 3350 3650 50  0000 C CNN
+F 1 "IDH06SG60C" H 3350 3450 50  0000 C CNN
+F 2 "alim_robot:TO-220-2" H 3350 3550 50  0001 C CNN
+F 3 "" H 3350 3550 50  0001 C CNN
+	1    3350 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L D D1
+U 1 1 5917DA5E
+P 2850 3900
+F 0 "D1" H 2850 4000 50  0000 C CNN
+F 1 "IDH06SG60C" H 2850 3800 50  0000 C CNN
+F 2 "alim_robot:TO-220-2" H 2850 3900 50  0001 C CNN
+F 3 "" H 2850 3900 50  0001 C CNN
+	1    2850 3900
+	-1   0    0    1   
+$EndComp
+Text Label 3650 5600 0    60   ~ 0
+En_P5
+$Comp
+L CONN_01X04 J6
+U 1 1 59186547
+P 7500 1600
+F 0 "J6" H 7500 1850 50  0000 C CNN
+F 1 "AU" V 7600 1600 50  0000 C CNN
+F 2 "Connectors:bornier4" H 7500 1600 50  0001 C CNN
+F 3 "" H 7500 1600 50  0001 C CNN
+	1    7500 1600
+	1    0    0    -1  
+$EndComp
+Text Label 4150 5250 0    60   ~ 0
+Ven
+$Comp
+L +5V #PWR05
+U 1 1 5918A753
+P 4150 5250
+F 0 "#PWR05" H 4150 5100 50  0001 C CNN
+F 1 "+5V" H 4150 5390 50  0000 C CNN
+F 2 "" H 4150 5250 50  0001 C CNN
+F 3 "" H 4150 5250 50  0001 C CNN
+	1    4150 5250
+	1    0    0    1   
+$EndComp
+$Comp
+L +5V #PWR06
+U 1 1 5918C009
+P 7950 950
+F 0 "#PWR06" H 7950 800 50  0001 C CNN
+F 1 "+5V" H 7950 1090 50  0000 C CNN
+F 2 "" H 7950 950 50  0001 C CNN
+F 3 "" H 7950 950 50  0001 C CNN
+	1    7950 950 
+	1    0    0    -1  
+$EndComp
+Text Label 7950 1100 0    60   ~ 0
+Ven
+$Comp
+L R R4
+U 1 1 5918C394
+P 6850 1900
+F 0 "R4" V 6930 1900 50  0000 C CNN
+F 1 "10k" V 6850 1900 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 6780 1900 50  0001 C CNN
+F 3 "" H 6850 1900 50  0001 C CNN
+	1    6850 1900
+	1    0    0    1   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 5918C3EF
+P 6850 2250
+F 0 "#PWR07" H 6850 2000 50  0001 C CNN
+F 1 "GND" H 6850 2100 50  0000 C CNN
+F 2 "" H 6850 2250 50  0001 C CNN
+F 3 "" H 6850 2250 50  0001 C CNN
+	1    6850 2250
+	1    0    0    -1  
+$EndComp
+Text Label 5700 1550 2    60   ~ 0
+En_P5
+$Comp
+L R R3
+U 1 1 5918DA5C
+P 6850 1300
+F 0 "R3" V 6930 1300 50  0000 C CNN
+F 1 "10k" V 6850 1300 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 6780 1300 50  0001 C CNN
+F 3 "" H 6850 1300 50  0001 C CNN
+	1    6850 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5918DAF6
+P 6850 950
+F 0 "#PWR08" H 6850 700 50  0001 C CNN
+F 1 "GND" H 6850 800 50  0000 C CNN
+F 2 "" H 6850 950 50  0001 C CNN
+F 3 "" H 6850 950 50  0001 C CNN
+	1    6850 950 
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_01X04 J3
+U 1 1 5919EB37
+P 4600 1250
+F 0 "J3" H 4600 1500 50  0000 C CNN
+F 1 "Out12L" V 4700 1250 50  0000 C CNN
+F 2 "Connectors:bornier4" H 4600 1250 50  0001 C CNN
+F 3 "" H 4600 1250 50  0001 C CNN
+	1    4600 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 J4
+U 1 1 5919EDD2
+P 4600 2600
+F 0 "J4" H 4600 2850 50  0000 C CNN
+F 1 "Out12R" V 4700 2600 50  0000 C CNN
+F 2 "Connectors:bornier4" H 4600 2600 50  0001 C CNN
+F 3 "" H 4600 2600 50  0001 C CNN
+	1    4600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 J2
+U 1 1 5919FBDC
+P 2300 5500
+F 0 "J2" H 2300 5750 50  0000 C CNN
+F 1 "Out5P" V 2400 5500 50  0000 C CNN
+F 2 "Connectors:bornier4" H 2300 5500 50  0001 C CNN
+F 3 "" H 2300 5500 50  0001 C CNN
+	1    2300 5500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1600 2450 2100 2450
+Wire Wire Line
+	2100 1100 1600 1100
+Wire Wire Line
+	1300 1100 1150 1100
+Wire Wire Line
+	1150 800  1150 2850
+Wire Wire Line
+	900  2450 1300 2450
+Connection ~ 1150 1100
+Wire Wire Line
+	1750 1300 1750 2950
+Wire Wire Line
+	1250 2650 2100 2650
+Wire Wire Line
+	2100 1300 1750 1300
+Connection ~ 1750 2650
+Wire Wire Line
+	1250 2850 1250 2650
+Connection ~ 1150 2450
+Wire Wire Line
+	2100 1500 2000 1500
+Wire Wire Line
+	2000 1500 2000 2850
+Wire Wire Line
+	2000 2850 2100 2850
+Wire Wire Line
+	3900 1100 4400 1100
+Wire Wire Line
+	3900 1300 4150 1300
+Wire Wire Line
+	4150 1200 4150 1400
+Wire Wire Line
+	4150 1200 4400 1200
+Wire Wire Line
+	4150 1400 4400 1400
+Connection ~ 4150 1300
+Wire Wire Line
+	4400 1300 4300 1300
+Wire Wire Line
+	4300 1300 4300 1100
+Connection ~ 4300 1100
+Wire Wire Line
+	3900 2450 4400 2450
+Wire Wire Line
+	4100 2550 4400 2550
+Wire Wire Line
+	4100 2550 4100 2750
+Wire Wire Line
+	4100 2650 3900 2650
+Wire Wire Line
+	4100 2750 4400 2750
+Connection ~ 4100 2650
+Wire Wire Line
+	4400 2650 4250 2650
+Wire Wire Line
+	4250 2650 4250 2450
+Connection ~ 4250 2450
+Wire Wire Line
+	5300 5000 5300 5400
+Wire Wire Line
+	2150 5000 2150 5300
+Wire Wire Line
+	2600 5100 2600 5000
+Wire Wire Line
+	2250 5300 2250 5200
+Wire Wire Line
+	2250 5200 3100 5200
+Connection ~ 2900 5200
+Wire Wire Line
+	2750 5000 2750 5200
+Connection ~ 2750 5200
+Wire Wire Line
+	2450 5100 2450 5000
+Wire Wire Line
+	2150 5100 2600 5100
+Connection ~ 2150 5100
+Wire Wire Line
+	2900 5000 2900 5400
+Wire Wire Line
+	2300 5000 2300 5100
+Connection ~ 2300 5100
+Connection ~ 2450 5100
+Wire Wire Line
+	3050 5000 3050 5050
+Wire Wire Line
+	3050 5050 3200 5050
+Wire Wire Line
+	3200 5050 3200 5000
+Wire Wire Line
+	3400 5200 3500 5200
+Wire Wire Line
+	3500 5200 3500 5000
+Wire Wire Line
+	4550 5000 4550 5300
+Wire Wire Line
+	4650 5300 4650 5200
+Wire Wire Line
+	4150 5100 5000 5100
+Wire Wire Line
+	4850 5000 4850 5100
+Wire Wire Line
+	4700 5000 4700 5100
+Connection ~ 4850 5100
+Connection ~ 4700 5100
+Connection ~ 4550 5100
+Wire Wire Line
+	4650 5200 5500 5200
+Connection ~ 5300 5200
+Wire Wire Line
+	5150 5000 5150 5200
+Connection ~ 5150 5200
+Wire Wire Line
+	5800 5200 5900 5200
+Wire Wire Line
+	5900 5200 5900 5000
+Wire Wire Line
+	5600 5050 5600 5000
+Wire Wire Line
+	5450 5050 5600 5050
+Wire Wire Line
+	5450 5050 5450 5000
+Wire Wire Line
+	900  3550 3200 3550
+Wire Wire Line
+	900  3900 2700 3900
+Wire Wire Line
+	3000 3900 3150 3900
+Wire Wire Line
+	3150 3900 3150 5050
+Connection ~ 3150 5050
+Wire Wire Line
+	3500 3550 5550 3550
+Wire Wire Line
+	5550 3550 5550 5050
+Connection ~ 5550 5050
+Wire Wire Line
+	6050 5000 6050 5350
+Wire Wire Line
+	6050 5350 5300 5350
+Connection ~ 5300 5350
+Wire Wire Line
+	3650 5000 3650 5600
+Wire Wire Line
+	2000 2000 5150 2000
+Connection ~ 2000 2000
+Wire Wire Line
+	7950 950  7950 1900
+Wire Wire Line
+	7950 1250 7300 1250
+Wire Wire Line
+	7300 1250 7300 1450
+Wire Wire Line
+	7300 1750 7300 1900
+Wire Wire Line
+	7300 1900 7950 1900
+Connection ~ 7950 1250
+Wire Wire Line
+	6850 2250 6850 2050
+Wire Wire Line
+	6850 1750 6850 1650
+Wire Wire Line
+	5150 1650 7300 1650
+Connection ~ 6850 1650
+Wire Wire Line
+	5150 2000 5150 1650
+Wire Wire Line
+	5700 1550 7300 1550
+Wire Wire Line
+	6850 950  6850 1150
+Wire Wire Line
+	6850 1450 6850 1550
+Connection ~ 6850 1550
+Wire Wire Line
+	900  2450 900  3900
+Connection ~ 900  3550
+Wire Wire Line
+	2350 5300 2350 5100
+Connection ~ 2350 5100
+Wire Wire Line
+	2450 5300 2450 5200
+Connection ~ 2450 5200
+Wire Wire Line
+	4150 5100 4150 5250
+$Comp
+L CONN_01X04 J5
+U 1 1 591A042B
+P 4700 5500
+F 0 "J5" H 4700 5750 50  0000 C CNN
+F 1 "Out5L" V 4800 5500 50  0000 C CNN
+F 2 "Connectors:bornier4" H 4700 5500 50  0001 C CNN
+F 3 "" H 4700 5500 50  0001 C CNN
+	1    4700 5500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5000 5100 5000 5000
+Wire Wire Line
+	4750 5300 4750 5100
+Connection ~ 4750 5100
+Wire Wire Line
+	4850 5300 4850 5200
+Connection ~ 4850 5200
+$EndSCHEMATC
